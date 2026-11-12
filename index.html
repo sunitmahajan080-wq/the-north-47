@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>North 47 | Fashion Destination, Yavatmal</title>
+<meta name="description" content="North 47 Fashion Destination, Pangari, Yavatmal. Premium shirts, kurtas and embroidery shirts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@1&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0b0b0c;--ink:#f1efec;--mute:#8d8a86;--red:#b3121b;--wa:#25d366}
+html{background:var(--bg);scroll-behavior:smooth}
+body{background:radial-gradient(ellipse 80% 40% at 50% 0%,#1c1c1f,var(--bg));color:var(--ink);font-family:"Inter","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:116px;min-height:100vh}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:22px clamp(18px,4vw,46px) 0;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.logo{font-family:"UnifrakturMaguntia",serif;font-weight:400;font-size:clamp(48px,9vw,84px);line-height:1;text-align:center;padding:10px 12px 0;letter-spacing:.01em}
+.tag{text-align:center;color:var(--mute);font-size:12px;letter-spacing:.3em;text-transform:uppercase;margin-top:10px}
+.pill{display:inline-grid;place-items:center;height:38px;padding:0 22px;border:1px solid rgba(241,239,236,.6);border-radius:40px;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;transition:background .25s,color .25s}
+.pill:hover{background:var(--ink);color:var(--bg)}
+.wa{background:var(--wa);border-color:var(--wa);color:#06220f}
+.wa:hover{background:#fff;border-color:#fff}
+.lead{text-align:center;max-width:520px;margin:22px auto 0;padding:0 20px;color:#c9c6c1;line-height:1.55;font-size:15px}
+.rail{position:relative;margin:46px auto 0;width:min(1200px,92%);height:12px;border-radius:6px;background:linear-gradient(#fafafa 0%,#b9bcc1 28%,#5d6066 55%,#a9adb3 78%,#e6e7e9 100%);box-shadow:0 10px 18px rgba(0,0,0,.45)}
+.rail::before,.rail::after{content:"";position:absolute;top:-9px;width:16px;height:30px;border-radius:5px;background:linear-gradient(90deg,#8d9096,#f3f3f4 45%,#7a7d83)}
+.rail::before{left:-10px}.rail::after{right:-10px}
+.grid{width:min(1200px,92%);margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:0 14px}
+@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr);gap:0 24px}}
+.card{display:block;padding-top:34px;transform-origin:50% 0;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.card:hover,.card:focus-visible{transform:rotate(-2deg)}
+.card .hook{position:relative;height:0}
+.card .hook::before{content:"";position:absolute;left:50%;top:-34px;width:2px;height:34px;background:linear-gradient(#e6e7e9,#5d6066)}
+.card .ph{aspect-ratio:4/5;border-radius:4px;overflow:hidden;background:#161618;box-shadow:0 24px 34px -14px rgba(0,0,0,.7)}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.card h3{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400;font-size:24px;line-height:1.15;margin:14px 0 4px}
+.card p{color:var(--mute);font-size:13px;line-height:1.4}
+.card .ask{margin-top:10px;font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.card .ask::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--wa)}
+.visit{width:min(1000px,92%);margin:70px auto 0;display:grid;gap:28px;grid-template-columns:1fr}
+@media(min-width:760px){.visit{grid-template-columns:1fr 1fr}}
+.visit h2{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400;font-size:34px;margin-bottom:10px}
+.visit p{color:#c9c6c1;line-height:1.6;font-size:15px}
+.visit .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.shop{width:100%;max-width:340px;border-radius:4px;margin-top:18px;border:1px solid rgba(241,239,236,.16)}
+footer{text-align:center;color:var(--mute);font-size:12px;letter-spacing:.08em;margin:60px 0 20px;padding:0 16px;line-height:1.8}
+.band{position:fixed;left:0;right:0;bottom:0;height:46px;background:var(--red);overflow:hidden;display:flex;align-items:center;z-index:5}
+.band div{display:flex;white-space:nowrap;font-size:13px;font-weight:600;letter-spacing:.14em;animation:m 22s linear infinite}
+.band span{padding-right:22px}
+@keyframes m{to{transform:translateX(-50%)}}
+.dock{position:fixed;left:0;right:0;bottom:46px;z-index:6;display:flex;justify-content:center;gap:10px;padding:10px 14px}
+.dock a{flex:1;max-width:220px;height:44px;display:grid;place-items:center;border-radius:44px;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.dock .call{border:1px solid rgba(241,239,236,.6);background:rgba(11,11,12,.85)}
+.dock .wad{background:var(--wa);color:#06220f}
+@media(prefers-reduced-motion:reduce){.band div{animation:none}.card{transition:none}}
+</style>
+</head>
+<body>
+<div class="top"><span>Yavatmal</span><a href="https://www.instagram.com/north_47_" target="_blank" rel="noopener">Instagram</a></div>
+<h1 class="logo">the_north_47</h1>
+<p class="tag">Fashion Destination</p>
+<p class="lead">Kapde pe tap karo, seedha hamare WhatsApp pe chat khulegi. Price, kitne mein milega aur available hai ya nahi, sab wahin pucho.</p>
+<div style="text-align:center;margin-top:22px"><a class="pill wa" id="gen" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+
+<div class="rail" aria-hidden="true"></div>
+<main class="grid" id="grid"></main>
+
+<section class="visit" id="visit">
+  <div>
+    <h2>Store pe aao</h2>
+    <p>Akruti Plaza, Pangari, Yavatmal, Maharashtra 445001<br>Roz subah 10 baje se raat 10 baje tak.</p>
+    <div class="row">
+      <a class="pill" href="https://www.google.com/maps/search/?api=1&query=North+47+Fashion+Destination+Akruti+Plaza+Pangari+Yavatmal+445001" target="_blank" rel="noopener">Directions</a>
+      <a class="pill" href="tel:+917410188004">Call 74101 88004</a>
+      <a class="pill" href="tel:+918408825343">Call 84088 25343</a>
+    </div>
+  </div>
+  <div>
+    <h2>Naya stock</h2>
+    <p>Premium shirts, short kurta aur embroidery shirts. Latest stock dekhne ke liye Instagram follow karo ya WhatsApp pe pucho.</p>
+    <img class="shop" src="shop.jpg" alt="North 47 store, Yavatmal">
+    <div class="row">
+      <a class="pill" href="https://www.instagram.com/north_47_" target="_blank" rel="noopener">@north_47_</a>
+      <a class="pill wa" id="gen2" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+<footer>North 47 &bull; Fashion Destination &bull; Yavatmal<br>74101 88004 &bull; 84088 25343</footer>
+
+<nav class="dock"><a class="call" href="tel:+917410188004">Call</a><a class="wad" id="fab" href="#" target="_blank" rel="noopener">WhatsApp</a></nav>
+<div class="band" aria-hidden="true"><div id="mq"></div></div>
+
+<script>
+var NUM="917410188004";
+var items=[
+ {n:"Micro Check Shirts",d:"Premium micro check shirts in 5 colours.",i:"checks.jpg"},
+ {n:"Check Shirt Collection",d:"Green, pink and blue micro checks.",i:"checks3.jpg"},
+ {n:"Stripes Shirt, Navy",d:"Premium Wear stripes, button-down collar.",i:"navy.jpg"},
+ {n:"Stripes Shirt, Black",d:"Premium Wear stripes, button-down collar.",i:"black.jpg"},
+ {n:"Stripes Shirt, Brown",d:"Premium Wear stripes, button-down collar.",i:"brown.jpg"},
+ {n:"Stripes Shirt, Green",d:"Premium Wear stripes, button-down collar.",i:"green.jpg"},
+ {n:"Short Kurta",d:"White embroidered short kurta.",i:"kurta.jpg"},
+ {n:"Embroidery Shirt, Maroon",d:"Ombre shirt with embroidered border.",i:"emb-maroon.jpg"},
+ {n:"Embroidery Shirt, Olive",d:"Ombre shirt with embroidered border.",i:"emb-olive.jpg"},
+ {n:"Embroidery Shirt, Blue",d:"Ombre shirt with embroidered border.",i:"emb-blue.jpg"},
+ {n:"Embroidery Shirt, Orange",d:"Ombre shirt with embroidered border.",i:"emb-orange.jpg"},
+ {n:"Embroidery Shirt, Navy",d:"Ombre shirt with embroidered border.",i:"emb-navy.jpg"}
+];
+function wa(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
+var g=document.getElementById("grid");
+items.forEach(function(x){
+  var a=document.createElement("a");
+  a.className="card";a.target="_blank";a.rel="noopener";
+  a.href=wa("Hi! Mujhe "+x.n+" ke baare mein puchna hai. Price kya hai, kitne mein milega aur available hai kya?");
+  a.innerHTML='<div class="hook"></div><div class="ph"><img src="'+x.i+'" alt="'+x.n+'" loading="lazy"></div><h3>'+x.n+'</h3><p>'+x.d+'</p><div class="ask">Price aur availability pucho</div>';
+  g.appendChild(a);
+});
+var general=wa("Hi! Mujhe North 47 ke kapde dekhne hain. Kya available hai aur price kya hai?");
+["gen","gen2","fab"].forEach(function(id){document.getElementById(id).href=general});
+var s="";for(var r=0;r<16;r++){s+="<span>NORTH 47</span><span>&bull;</span><span>FASHION DESTINATION</span><span>&bull;</span><span>NEW STOCK</span><span>&bull;</span>"}
+document.getElementById("mq").innerHTML=s;
+</script>
+</body>
+</html>
